@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="4f5dd2809fd022107f444b0d6224ab86" label="Wish Item" max_length="40" name="x_snc_wishlist_wish_item" type="collection">
+        <element choice="3" label="is this wish list table" max_length="40" name="is_this_wish_list_table" type="boolean">
+            <choice/>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Item" mandatory="true" max_length="125" name="item" type="string"/>
         <element attributes="encode_utf8=false" label="Requestor" mandatory="true" max_length="32" name="requestor" reference="sys_user" type="reference"/>
         <index name="index">
